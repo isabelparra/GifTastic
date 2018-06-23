@@ -1,0 +1,10 @@
+.gifs {
+    float: left;
+}
+
+#search-form {
+    float: right;
+    position: absolute;
+    right: 100px;
+
+}
