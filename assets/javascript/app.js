@@ -16,15 +16,13 @@ function renderButtons() {
     }
 }   
 
-function addButton() {
-$('#run-search').on('click', function() {
-    var submitButton = $('#search-input').val().trim();
+function newButton() {
+    $('#addGif').on('click', function() {
+    var submit = $('#artist-input').val().trim();
+    artists.push(submit);
 
-    var newButton = $('<button>');
-    newButton.addClass('btn btn-info');
-    newButton.attr('data-name');
-    $('#run-search').append(newButton);
-
+    renderButtons();
+        return false;
 });
 }
 
@@ -62,7 +60,7 @@ function displayGifs() {
 }
 
 renderButtons();
-addButton();
+newButton();
 $(document).on('click', '.artist', displayGifs);
 $(document).on('click', '.image', function() {
     var state = $(this).attr('data-state');
